@@ -29,9 +29,12 @@ header{
 .cv-button{
     cursor: pointer;
     border: none;
+    display: flex;
+    align-items: center;
+    gap: .65rem;
     background-color: #1D1C1A;
     color: #FAFAFA;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     padding: .75rem;
     border-radius: .5rem;
     font-weight: bold;

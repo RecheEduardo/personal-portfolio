@@ -18,7 +18,7 @@ const Navbar = () => {
           <li>Experiência</li>
           <li>Formação</li>
         </ul>
-        <button className='cv-button'>Meu CV <FaDownload/></button>
+        <button className='cv-button'><span>Meu CV</span><FaDownload/></button>
       </nav>
     </header>
   )
