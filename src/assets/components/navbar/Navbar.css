@@ -1,0 +1,38 @@
+header{
+    padding-inline: 3rem;
+}
+
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.75rem;
+}.nav-top ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.site-logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}.site-logo h1{
+    font-family: 'Prata';
+    font-style: italic;
+    font-size: 1.75rem;
+    margin-block: 0;
+}
+
+.cv-button{
+    cursor: pointer;
+    border: none;
+    background-color: #1D1C1A;
+    color: #FAFAFA;
+    font-size: 1.25rem;
+    padding: .75rem;
+    border-radius: .5rem;
+    font-weight: bold;
+}

@@ -1,8 +1,26 @@
 import React from 'react'
+import SiteLogo from '../../icons/icon_site.svg'
+import { FaDownload } from "react-icons/fa";
+import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <header>
+      <nav className='nav-top'>
+        <div className="site-logo">
+          <img src={SiteLogo} width={40} />
+          <h1>Eduardo.Reche</h1>
+        </div>
+        <ul>
+          <li>Sobre Mim</li>
+          <li>Conhecimentos</li>
+          <li>Projetos</li>
+          <li>Experiência</li>
+          <li>Formação</li>
+        </ul>
+        <button className='cv-button'>Meu CV <FaDownload/></button>
+      </nav>
+    </header>
   )
 }
 
