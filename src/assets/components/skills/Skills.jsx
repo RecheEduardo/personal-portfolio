@@ -1,15 +1,14 @@
 import React from 'react'
 import './Skills.css'
+import SkillsSlider from './SkillsSlider'
 
 const Skills = () => {
   return (
     <>
-    <section className='skills'>
-      <h1>Minhas <span className='outline'>habilidades</span></h1>
-      <div className="slider">
-        
-      </div>
-    </section>
+      <section className='skills'>
+        <h1>Minhas <span className='outline'>habilidades</span></h1>
+        <SkillsSlider />
+      </section>
     </>
   )
 }

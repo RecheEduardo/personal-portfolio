@@ -4,8 +4,6 @@ import Icon1 from '../../icons/icon1.svg'
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
-
-
 const MainHeader = () => {
   return (
     <section className='main-header'>
@@ -19,7 +17,7 @@ const MainHeader = () => {
         <div className="media-icons">
             <a href="https://www.linkedin.com/in/eduardorechemartins/" className='media-btn' target='_blank'><FaLinkedin/></a>
             <a href="https://github.com/RecheEduardo" className='media-btn' target='_blank'><FaGithub/></a>
-            <a href="https://wa.me/5511994088541?text=Ol%C3%A1%2C%20Eduardo%20!" className='media-btn' target='_blank'><FaWhatsapp/></a>
+            <a href="https://wa.me/5511994088541?text=Ol%C3%A1%2C%20Eduardo!" className='media-btn' target='_blank'><FaWhatsapp/></a>
             <a href="mailto:eduardorechemartins2006@gmail.com" className='media-btn' target='_blank'><IoMdMail/></a>
         </div>
       </div>
