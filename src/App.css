@@ -1,0 +1,4 @@
+.outline{ /* Estilização para textos com borda*/
+    color: #FAFAFA;
+    text-shadow: -5px -1px 0 #1D1C1A, 1px -1px 0 #1D1C1A, -5px 1px 0 #1D1C1A, 1px 1px 0 #1D1C1A;
+}

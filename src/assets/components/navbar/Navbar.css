@@ -19,12 +19,15 @@ header{
     display: flex;
     align-items: center;
     gap: .5rem;
+    transition: .25s;
+    cursor: default;
+    user-select: none;
 }.site-logo h1{
     font-family: 'Prata';
     font-style: italic;
     font-size: 1.75rem;
     margin-block: 0;
-}
+}.site-logo:hover{scale: 1.07; transition: .25s;}
 
 .cv-button{
     cursor: pointer;
