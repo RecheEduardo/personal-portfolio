@@ -37,8 +37,18 @@ header{
     gap: .65rem;
     background-color: #1D1C1A;
     color: #FAFAFA;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
+    text-decoration: none;
     padding: .75rem;
     border-radius: .5rem;
     font-weight: bold;
+    transition: .5s;
+}
+
+.cv-button:hover{
+    transition: .25s;
+    color: #1D1C1A;
+    background-color: #FAFAFA;
+    outline: 1px solid #1D1C1A;
+    box-shadow: 6px 6px 0px 0px #1D1C1A;
 }
