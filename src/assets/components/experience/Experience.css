@@ -1,0 +1,30 @@
+.experience{
+    background-color: #1D1C1A;
+    color: #FAFAFA;
+    padding-block: 3rem;
+}
+.experience h1{
+    font-size: 5rem;
+    margin-inline: 3rem;
+    text-align: center;
+    border-bottom: 1px solid #fafafa46;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-inline: 3rem;
+    padding: 3rem;
+    border: 1px solid #FAFAFA46;
+    margin-block: 3rem;
+    border-radius: .75rem;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+}
+

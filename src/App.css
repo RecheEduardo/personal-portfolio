@@ -2,3 +2,7 @@
     color: #FAFAFA;
     text-shadow: -5px -1px 0 #1D1C1A, 1px -1px 0 #1D1C1A, -5px 1px 0 #1D1C1A, 1px 1px 0 #1D1C1A;
 }
+.outline-reverse{ /* Estilização para textos com borda*/
+    color: #1D1C1A;
+    text-shadow: -1px -1px 0 #FAFAFA, 1px -1px 0 #FAFAFA, -1px 1px 0 #FAFAFA, 1px 1px 0 #FAFAFA;
+}
