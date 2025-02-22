@@ -5,18 +5,20 @@ import ProjectCard from './ProjectCard'
 // Imagem dos Projetos
 import BlogalizandoIMG from "../../icons/projects-icons/banner_blogalizando.png"
 import ReactQuizIMG from "../../icons/projects-icons/banner_reactquiz.png"
-import QRCodeGenIMG from "../../icons/projects-icons/banner_qrcodegenerator.png"
+import ProjetoAcmeIMG from "../../icons/projects-icons/banner_projetoacme.png"
 import CrudShowcaseIMG from "../../icons/projects-icons/banner_crudshowcase.png"
 import MultistepFormIMG from "../../icons/projects-icons/banner_multistepform.png"
+import OthersProjects from "../../icons/projects-icons/others.png"
 
 const Projects = () => {
 
   const Cards = [
     {title: "Blogalizando", url: 'https://github.com/RecheEduardo/blogalizando', image: BlogalizandoIMG},
-    {title: "React Quiz", url: 'https://themed-quiz.vercel.app/', image: ReactQuizIMG},
-    {title: "QR Code Generator", url: 'https://gerador-qrcode-reactjs.vercel.app/', image: QRCodeGenIMG},
-    {title: "CRUD Showcase", url: 'https://github.com/RecheEduardo/crud-showcase', image: CrudShowcaseIMG},
     {title: "Multistep Form", url: 'https://multistep-reactjs-form.vercel.app/', image: MultistepFormIMG},
+    {title: "CRUD Showcase", url: 'https://github.com/RecheEduardo/crud-showcase', image: CrudShowcaseIMG},
+    {title: "React Quiz", url: 'https://themed-quiz.vercel.app/', image: ReactQuizIMG},
+    {title: "Projeto ACME", url: 'https://github.com/RecheEduardo/projeto-acme', image: ProjetoAcmeIMG},
+    {url: 'https://github.com/RecheEduardo?tab=repositories', image: OthersProjects},
   ]
 
   return (

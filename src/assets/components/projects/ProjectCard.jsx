@@ -1,14 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import './ProjectCard.css';
 
-const ProjectCard = ({projectTitle, projectURL, projectImage}) => {
+const ProjectCard = ({ projectTitle, projectURL, projectImage }) => {
   const cardRef = useRef(null);
-  const [bounds, setBounds] = useState(null);
 
-  // Função que manipula o movimento do mouse
   const rotateToMouse = (e) => {
-    if (!bounds) return;
-
+    const bounds = cardRef.current.getBoundingClientRect();
     const mouseX = e.clientX;
     const mouseY = e.clientY;
     const leftX = mouseX - bounds.x;
@@ -17,9 +14,8 @@ const ProjectCard = ({projectTitle, projectURL, projectImage}) => {
       x: leftX - bounds.width / 2,
       y: topY - bounds.height / 2,
     };
-    const distance = Math.sqrt(center.x * 2 + center.y * 2);
+    const distance = Math.sqrt(center.x ** 2 + center.y ** 2);
 
-    // Altera o estilo de transformação do card
     cardRef.current.style.transform = `
       scale3d(1.07, 1.07, 1.07)
       rotate3d(
@@ -30,46 +26,35 @@ const ProjectCard = ({projectTitle, projectURL, projectImage}) => {
       )
     `;
 
-    // Altera o estilo do glow
-    cardRef.current.querySelector('.glow').style.backgroundColor = `
-      radial-gradient(
+    const glow = cardRef.current.querySelector('.glow');
+    if (glow) {
+      glow.style.backgroundImage = `radial-gradient(
         circle at
         ${center.x * 2 + bounds.width / 2}px
         ${center.y * 2 + bounds.height / 2}px,
         #ffffff55,
         #0000000f
-      )
-    `;
+      )`;
+    }
   };
 
-  useEffect(() => {
-    const handleMouseEnter = () => {
-      setBounds(cardRef.current.getBoundingClientRect());
-      document.addEventListener('mousemove', rotateToMouse);
-    };
-
-    const handleMouseLeave = () => {
-      document.removeEventListener('mousemove', rotateToMouse);
-      cardRef.current.style.transform = '';
-      //cardRef.current.style.background = '';
-    };
-
-    const cardElement = cardRef.current;
-    cardElement.addEventListener('mouseenter', handleMouseEnter);
-    cardElement.addEventListener('mouseleave', handleMouseLeave);
-
-    return () => {
-      cardElement.removeEventListener('mouseenter', handleMouseEnter);
-      cardElement.removeEventListener('mouseleave', handleMouseLeave);
-    };
-  }, [bounds]);
+  const resetStyles = () => {
+    cardRef.current.style.transform = '';
+    const glow = cardRef.current.querySelector('.glow');
+    if (glow) {
+      glow.style.backgroundImage = '';
+    }
+  };
 
   return (
-    <a className="project-card" 
-      target='_blank' 
-      href={projectURL} 
-      ref={cardRef} 
+    <a
+      className="project-card"
+      target="_blank"
+      href={projectURL}
+      ref={cardRef}
       style={{ backgroundImage: `url(${projectImage})` }}
+      onMouseMove={rotateToMouse}
+      onMouseLeave={resetStyles}
     >
       {projectTitle}
       <div className="glow" />
