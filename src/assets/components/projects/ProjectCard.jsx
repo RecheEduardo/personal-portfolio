@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ProjectCard.css';
 
-const ProjectCard = ({projectTitle, projectURL}) => {
+const ProjectCard = ({projectTitle, projectURL, projectImage}) => {
   const cardRef = useRef(null);
   const [bounds, setBounds] = useState(null);
 
@@ -31,7 +31,7 @@ const ProjectCard = ({projectTitle, projectURL}) => {
     `;
 
     // Altera o estilo do glow
-    cardRef.current.querySelector('.glow').style.backgroundImage = `
+    cardRef.current.querySelector('.glow').style.backgroundColor = `
       radial-gradient(
         circle at
         ${center.x * 2 + bounds.width / 2}px
@@ -51,7 +51,7 @@ const ProjectCard = ({projectTitle, projectURL}) => {
     const handleMouseLeave = () => {
       document.removeEventListener('mousemove', rotateToMouse);
       cardRef.current.style.transform = '';
-      cardRef.current.style.background = '';
+      //cardRef.current.style.background = '';
     };
 
     const cardElement = cardRef.current;
@@ -65,7 +65,12 @@ const ProjectCard = ({projectTitle, projectURL}) => {
   }, [bounds]);
 
   return (
-    <a className="project-card" target='_blank' href={projectURL} ref={cardRef} style={{backgroundImage: `url`}}>
+    <a className="project-card" 
+      target='_blank' 
+      href={projectURL} 
+      ref={cardRef} 
+      style={{ backgroundImage: `url(${projectImage})` }}
+    >
       {projectTitle}
       <div className="glow" />
     </a>

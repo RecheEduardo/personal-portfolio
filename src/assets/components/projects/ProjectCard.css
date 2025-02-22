@@ -2,7 +2,7 @@
     font-weight: bold;
     padding: 1em;
     text-align: right;
-    color: #181a1a;
+    color: #fafafa90;
     text-decoration: none;
     
     height: 400px;
@@ -14,6 +14,7 @@
     
     border-radius: 10px;
     background-size: cover;
+    background-position: center;
     cursor: pointer;
     
     position: relative;
@@ -35,5 +36,5 @@
     height: 100%;
     left: 0;
     top: 0;
-    background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+    background-color: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
 }
