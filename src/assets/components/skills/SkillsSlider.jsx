@@ -1,94 +1,69 @@
 import React from "react";
 import "./SkillsSlider.css";
 /* Importando Logos para o Slider */
-import {
-  FaHtml5,
-  FaJsSquare,
-  FaPhp,
-  FaGitAlt,
-  FaAngular,
-  FaBootstrap,
-  FaNodeJs,
-  FaSass,
-  FaReact
-} from "react-icons/fa";
+import { FaHtml5,FaJsSquare,FaPhp,FaGitAlt,
+  FaAngular,FaBootstrap,FaNodeJs,FaSass,FaReact} from "react-icons/fa";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { SiRubyonrails, SiSqlite } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
+import SkillBadge from "./SkillBadge";
 
 const SkillsSlider = () => {
+
+    const topSlider = [
+        {icon: <FaHtml5 />, name: 'HTML', position: 1},
+        {icon: <FaJsSquare />, name: 'JavaScript', position: 2},
+        {icon: <FaPhp />, name: 'PHP', position: 3},
+        {icon: <FaGitAlt />, name: 'Git', position: 4},
+        {icon: <FaAngular />, name: 'Angular', position: 5},
+        {icon: <FaBootstrap />, name: 'Bootstrap', position: 6},
+        {icon: <FaReact />, name: 'React.Js', position: 7},
+    ]
+
+    const bottomSlider = [
+        {icon: <FaNodeJs />, name: 'Node.Js', position: 1},
+        {icon: <GrMysql />, name: 'MySQL', position: 2},
+        {icon: <SiRubyonrails />, name: 'Ruby on Rails', position: 3},
+        {icon: <FaSass />, name: 'SASS', position: 4},
+        {icon: <BiLogoPostgresql />, name: 'PostgreSQL', position: 5},
+        {icon: <BiLogoTypescript />, name: 'TypeScript', position: 6},
+        {icon: <SiSqlite />, name: 'SQLite3', position: 7},
+    ]
+
   return (
     <div className="sliders">
-      <div className="slider-left" 
+        <div className="slider-left" 
             style={{"--quantity": 7, 
                     "--width": '15rem',
                     "--height": '15rem' }
-       }>
-        <div className="list">
-            <div className="item" style={{"--position": 1}}>
-                <FaHtml5 />
-                <span>HTML</span>
-            </div>
-            <div className="item" style={{"--position": 2}}>
-                <FaJsSquare />
-                <span>JavaScript</span>
-            </div>
-            <div className="item" style={{"--position": 3}}>
-                <FaPhp />
-                <span>PHP</span>
-            </div>
-            <div className="item" style={{"--position": 4}}>
-                <FaGitAlt />
-                <span>Git</span>
-            </div>
-            <div className="item" style={{"--position": 5}}>
-                <FaAngular />
-                <span>Angular</span>
-            </div>
-            <div className="item" style={{"--position": 6}}>
-                <FaBootstrap />
-                <span>Bootstrap</span>
-            </div>
-            <div className="item" style={{"--position": 7}}>
-                <FaReact />
-                <span>React.Js</span>
+        }>
+            <div className="list">
+                {topSlider.map((badge, index) => {
+                        return(<SkillBadge key={index} 
+                            skillIcon={badge.icon} 
+                            skillName={badge.name} 
+                            position={badge.position}
+                        />)
+                    })
+                }
             </div>
         </div>
-      </div>
-      <div className="slider-right" style={{"--quantity": 7, 
+
+        <div className="slider-right" 
+            style={{"--quantity": 7, 
                     "--width": '15rem',
-                    "--height": '15rem'}
-       }>
-        <div className="list">
-            <div className="item" style={{"--position": 1}}>
-                <FaNodeJs />
-                <span>Node.Js</span>
+                    "--height": '15rem' }
+        }>
+            <div className="list">
+                {bottomSlider.map((badge, index) => {
+                        return(<SkillBadge key={index} 
+                            skillIcon={badge.icon} 
+                            skillName={badge.name} 
+                            position={badge.position}
+                        />)
+                    })
+                }
             </div>
-            <div className="item" style={{"--position": 2}}>
-                <GrMysql />
-                <span>MySQL</span>
-            </div>
-            <div className="item" style={{"--position": 3}}>
-                <SiRubyonrails />
-                <span>Ruby on Rails</span>
-            </div>
-            <div className="item" style={{"--position": 4}}>
-                <FaSass />
-                <span>SASS</span>
-            </div>
-            <div className="item" style={{"--position": 5}}>
-                <BiLogoPostgresql />
-                <span>PostgreSQL</span>
-            </div>
-            <div className="item" style={{"--position": 6}}>
-                <BiLogoTypescript />
-                <span>TypeScript</span>
-            </div>
-            <div className="item" style={{"--position": 7}}>
-                <SiSqlite />
-                <span>SQLite3</span>
-            </div>
-        </div>
       </div>
     </div>
   );
