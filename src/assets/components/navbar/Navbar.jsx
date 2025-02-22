@@ -18,7 +18,7 @@ const Navbar = () => {
           <li>Experiência</li>
           <li>Formação</li>
         </ul>
-        <a href='../../public/CV_Eduardo_Reche.pdf' target='_blank' className='cv-button'><span>Meu CV</span><FaDownload/></a>
+        <a href='/CV_Eduardo_Reche.pdf' target='_blank' className='cv-button'><span>Meu CV</span><FaDownload/></a>
       </nav>
     </header>
   )
