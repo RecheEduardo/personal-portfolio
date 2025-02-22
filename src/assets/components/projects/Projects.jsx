@@ -24,8 +24,14 @@ const Projects = () => {
       <h1>Meus <span>Projetos</span></h1>
       <div className="cards-slider">
         {Cards.map((project, index) => {
-          return (<ProjectCard key={index} projectTitle={project.title} projectURL={project.url} projectImage={project.image}/>)
-        })
+          return (
+            <ProjectCard 
+              key={index} 
+              projectTitle={project.title} 
+              projectURL={project.url} 
+              projectImage={project.image}
+            />)
+          })
         } 
       </div>
     </section>
