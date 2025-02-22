@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ProjectCard.css';
 
-const ProjectCard = ({projectTitle}) => {
+const ProjectCard = ({projectTitle, projectURL}) => {
   const cardRef = useRef(null);
   const [bounds, setBounds] = useState(null);
 
@@ -65,10 +65,10 @@ const ProjectCard = ({projectTitle}) => {
   }, [bounds]);
 
   return (
-    <div className="project-card" ref={cardRef}>
+    <a className="project-card" target='_blank' href={projectURL} ref={cardRef} style={{backgroundImage: `url`}}>
       {projectTitle}
       <div className="glow" />
-    </div>
+    </a>
   );
 };
 

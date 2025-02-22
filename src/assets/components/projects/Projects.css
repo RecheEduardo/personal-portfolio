@@ -6,7 +6,7 @@
 .projects h1{
     font-size: 5.75rem;
     text-align: center;
-    padding-bottom: 2.5rem;
+    padding-bottom: 3.5rem;
     font-weight: 200;
 }.projects span{
     font-weight: 900;
@@ -15,6 +15,7 @@
 
 .cards-slider{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 4rem;
 }
