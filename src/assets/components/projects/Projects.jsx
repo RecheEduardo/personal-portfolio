@@ -16,8 +16,8 @@ const Projects = () => {
     {title: "Blogalizando", url: 'https://github.com/RecheEduardo/blogalizando', image: BlogalizandoIMG},
     {title: "Multistep Form", url: 'https://multistep-reactjs-form.vercel.app/', image: MultistepFormIMG},
     {title: "CRUD Showcase", url: 'https://github.com/RecheEduardo/crud-showcase', image: CrudShowcaseIMG},
-    {title: "React Quiz", url: 'https://themed-quiz.vercel.app/', image: ReactQuizIMG},
     {title: "Projeto ACME", url: 'https://github.com/RecheEduardo/projeto-acme', image: ProjetoAcmeIMG},
+    {title: "React Quiz", url: 'https://themed-quiz.vercel.app/', image: ReactQuizIMG},
     {url: 'https://github.com/RecheEduardo?tab=repositories', image: OthersProjects},
   ]
 
