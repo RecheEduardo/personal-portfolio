@@ -12,11 +12,11 @@ const Navbar = () => {
           <h1>Eduardo.Reche</h1>
         </div>
         <ul>
-          <li>Sobre Mim</li>
-          <li>Conhecimentos</li>
-          <li>Projetos</li>
-          <li>Experiência</li>
-          <li>Formação</li>
+          <li><a href="#main-header">Sobre Mim</a></li>
+          <li><a href="#skills">Conhecimentos</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="">Formação</a></li>
         </ul>
         <a href='/CV_Eduardo_Reche.pdf' target='_blank' className='cv-button'><span>Meu CV</span><FaDownload/></a>
       </nav>

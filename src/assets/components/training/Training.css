@@ -1,0 +1,19 @@
+.training{
+    padding-block: 2rem;
+    border-top: 1px solid #1D1C1A35;
+    margin-block: 2rem;
+    margin-inline: 3svw;
+}
+
+.training h1{
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+
+.background-container{
+    background-color: #1D1C1A;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: 3rem;
+    color: #FAFAFA;
+}

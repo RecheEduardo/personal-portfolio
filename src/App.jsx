@@ -5,6 +5,7 @@ import Skills from './assets/components/skills/Skills'
 import Experience from './assets/components/experience/Experience'
 import Projects from './assets/components/projects/Projects'
 import Training from './assets/components/training/Training'
+import Footer from './assets/components/footer/footer'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Skills />
       <Experience />
       <Projects />
-      <Training />
+      <Footer />
     </>
   )
 }

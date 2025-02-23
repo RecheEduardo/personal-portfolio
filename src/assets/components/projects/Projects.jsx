@@ -22,7 +22,7 @@ const Projects = () => {
   ]
 
   return (
-    <section className='projects'>
+    <section className='projects' id='projects'>
       <h1>Meus <span>Projetos</span></h1>
       <div className="cards-slider">
         {Cards.map((project, index) => {

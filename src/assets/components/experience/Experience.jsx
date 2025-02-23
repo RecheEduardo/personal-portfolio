@@ -5,7 +5,7 @@ import LogoNtk from '../../icons/ntk-logo.png'
 
 const Experience = () => {
   return (
-    <section className='experience'>
+    <section className='experience' id='experience'>
       <h1>Minha <span className='outline-reverse'>Experiência</span></h1>
       <div className="experience-cards">
         <div className="card">

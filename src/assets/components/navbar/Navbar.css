@@ -15,6 +15,26 @@ header{
     font-size: 1.1rem;
 }
 
+.nav-top li{
+    transition: .15s ease-out;
+}
+.nav-top li:hover{
+    transition: .5s ease-in;
+    scale: 1.25;
+}
+.nav-top li a{
+    color: #1D1C1A;
+    text-decoration: none;
+}
+
+.nav-top li{
+    transition: .15s;
+}
+.nav-top li:hover{
+    transition: .3s;
+    scale: 1.1;
+}
+
 .site-logo{
     display: flex;
     align-items: center;
