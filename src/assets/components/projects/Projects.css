@@ -43,9 +43,10 @@
 @media (max-width: 670px) {
     .projects {
         padding-inline: 1rem;
+        padding-block: 1.8rem;
     }
     .projects h1{
-        font-size: 4.25rem;
+        font-size: 4rem;
     }
     .cards-slider{
         gap: 1.5rem;
