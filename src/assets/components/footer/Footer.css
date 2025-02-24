@@ -35,7 +35,7 @@ ul {
     font-style: italic;
     color: #fafafa;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
 }
 
@@ -44,8 +44,8 @@ ul {
   color: #fafafa;
   text-transform: capitalize;
   margin-bottom: 35px;
-  font-weight: 500;
   position: relative;
+  font-weight: 900;
 }
 
 .footer-col h4::before {
