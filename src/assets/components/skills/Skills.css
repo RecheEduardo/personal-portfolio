@@ -8,4 +8,22 @@
 }
 .skills h1{
     font-size: 6rem;
+    text-align: center;
+    margin-inline: 2rem;
 }
+
+@media (max-width: 1024px) {
+    .skills{
+        padding-block: 1.75rem;
+    }
+    .skills h1{
+        font-size: 5rem;
+    }
+}
+
+
+@media (max-width: 715px) {
+    .skills h1{
+        font-size: 3.5rem;
+    }
+}   

@@ -88,3 +88,55 @@
         right: calc(var(--width) * -1);
     }
 }
+
+@media (max-width: 1024px) {
+
+    .slider-left .list .item,
+    .slider-right .list .item{
+       width: 12rem;
+       height: 12rem;
+       padding: 0.5rem;
+    }
+
+    .sliders{
+        gap: 1.25rem;
+        width: 85svw;
+    }
+  
+    .item span{
+        font-size: 1.25rem;
+    }
+    .item svg{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 715px) {
+    .item {
+        width: 8rem;
+        height: 8rem;
+        padding: 0.25rem; 
+    }
+    .item svg {
+        font-size: 7.5rem !important;
+    }
+
+    .item span {
+        font-size: 1.25rem; /* Reduz a fonte do nome da skill */
+    }
+
+    .slider-left .list .item,
+    .slider-right .list .item {
+        animation-delay: calc((10s / (var(--quantity))) * (var(--position) - 1));
+    }
+
+    @keyframes autoRun {
+        0% { left: 100%; }
+        100% { left: calc(var(--width) * -0.95); } /* Duplica para manter transição fluida */
+    }
+
+    @keyframes autoRunRev {
+        0% { right: 100%; }
+        100% { right: calc(var(--width) * -0.95); }
+    }
+}
