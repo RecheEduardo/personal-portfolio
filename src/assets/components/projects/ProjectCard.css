@@ -5,7 +5,7 @@
     color: #fafafa90;
     text-decoration: none;
     
-    height: 400px;
+    min-height: 400px;
     box-shadow: 0 1px 5px #00000099;
 
     flex: 1 1 calc(33.33% - 3rem);
@@ -15,6 +15,7 @@
     border-radius: 10px;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
     
     position: relative;
@@ -37,4 +38,28 @@
     left: 0;
     top: 0;
     background-color: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+}
+
+@media (max-width: 1470px) {
+    .project-card {
+        flex: 1 1 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+        max-height: 50vh;
+    }
+}   
+
+@media (max-width: 1000px) {
+    .project-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        scale: 0.95;
+        max-height: 70vh;
+    }
+}
+
+@media (max-width: 670px) {
+    .project-card {
+        max-height: 40vh;
+        scale: 1;
+    }
 }

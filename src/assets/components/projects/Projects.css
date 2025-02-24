@@ -1,6 +1,6 @@
 .projects{
     padding-block: 2.5rem;
-    padding-inline: 8rem;
+    padding-inline: 5rem;
 }
 
 .projects h1{
@@ -15,7 +15,39 @@
 
 .cards-slider{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 2.5rem;
     align-items: center;
-    gap: 4rem;
+}
+
+@media(max-width: 1470px) {
+    .projects{
+        padding-inline: 2.75rem;
+    }
+    .cards-slider{
+        justify-content: center;
+        column-gap: 1.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .projects {
+        padding-inline: 0.5rem;
+    }
+    .projects h1{
+        font-size: 4.75rem;
+    }
+}
+
+@media (max-width: 670px) {
+    .projects {
+        padding-inline: 1rem;
+    }
+    .projects h1{
+        font-size: 4.25rem;
+    }
+    .cards-slider{
+        gap: 1.5rem;
+    }
 }

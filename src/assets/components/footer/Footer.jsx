@@ -25,10 +25,10 @@ const Footer = () => {
           <div className="footer-col">
             <h4>Projetos</h4>
             <ul>
-              <li><a href="#">Blogalizando</a></li>
-              <li><a href="#">CRUD Showcase</a></li>
-              <li><a href="#">Projeto ACME</a></li>
-              <li><a href="#">MultiStep Form</a></li>
+              <li><a href="https://github.com/RecheEduardo/blogalizando" target='_blank'>Blogalizando</a></li>
+              <li><a href="https://github.com/RecheEduardo/crud-showcase" target='_blank'>CRUD Showcase</a></li>
+              <li><a href="https://github.com/RecheEduardo/projeto-acme" target='_blank'>Projeto ACME</a></li>
+              <li><a href="https://multistep-reactjs-form.vercel.app/" target='_blank'>MultiStep Form</a></li>
             </ul>
           </div>
           <div className="footer-col">
