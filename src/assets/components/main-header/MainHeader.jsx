@@ -21,7 +21,7 @@ const MainHeader = () => {
             <a href="mailto:eduardorechemartins2006@gmail.com" className='media-btn' target='_blank'><IoMdMail/></a>
         </div>
       </div>
-      <img src={Icon1} className="greetings-img" width={800}/>
+      <img src={Icon1} className="greetings-img"/>
     </section>
   )
 }

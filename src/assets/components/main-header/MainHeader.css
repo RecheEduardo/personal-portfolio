@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
-    margin-inline: 8rem;
+    padding-inline: 8rem;
 }
 .greetings-msg{
     display: flex;
@@ -12,6 +12,7 @@
 }.greetings-msg p{
     text-align: justify;
     font-size: 1.15rem;
+    line-height: 2rem;
 }
 .greetings-title{
     display: flex;
@@ -23,6 +24,11 @@
 }.greetings-title span{
     font-weight: 900;
 }
+
+.greetings-img{
+    max-width: 700px;
+}
+
 
 .media-icons{
     display: flex;
@@ -44,4 +50,23 @@
     color: #FAFAFA;
     border: 1px solid #FAFAFA;
     transition: .25s;
+}
+
+@media (max-width: 1500px) {
+    .main-header{
+        flex-direction: column;
+        padding-inline: 5svw;
+    }
+    .media-icons{
+        justify-content: end;
+    }
+}
+
+@media (max-width: 750px){
+    .greetings-msg{
+        gap: 3rem;
+    }
+    .greetings-title h1{
+        font-size: 3.25rem;
+    }
 }
