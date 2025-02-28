@@ -8,7 +8,9 @@ const Navbar = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleScroll = () => {
-    if (window.scrollY > lastScrollY) {
+    if (window.scrollY < 50) {
+      setShowNavbar(true); // Sempre exibe no topo
+    } else if (window.scrollY > lastScrollY) {
       setShowNavbar(false); 
     } else {
       setShowNavbar(true);
