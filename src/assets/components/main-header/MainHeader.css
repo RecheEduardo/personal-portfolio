@@ -4,6 +4,7 @@
     align-items: center;
     gap: 2.5rem;
     padding-inline: 8rem;
+    padding-block: 8rem;
 }
 .greetings-msg{
     display: flex;

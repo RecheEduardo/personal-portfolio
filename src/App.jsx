@@ -10,7 +10,7 @@ import Footer from './assets/components/footer/Footer'
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <MainHeader />
       <Skills />
       <Experience />
