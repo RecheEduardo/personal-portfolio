@@ -64,6 +64,10 @@
 }
 
 @media (max-width: 750px){
+.main-header{
+    padding-bottom: 1.5rem;
+}
+
     .greetings-msg{
         gap: 3rem;
     }

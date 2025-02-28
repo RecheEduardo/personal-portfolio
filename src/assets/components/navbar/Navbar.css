@@ -61,6 +61,8 @@
   user-select: none;
 }
 
+.site-logo a{ cursor: default;}
+
 .site-logo h1 {
   font-family: 'Prata';
   font-style: italic;
@@ -96,4 +98,21 @@
   background-color: #1D1C1A;
   outline: 1px solid #FAFAFA;
   box-shadow: 3px 3px 0px 0px #FAFAFA;
+}
+@media (max-width: 1200px) {
+    .nav-top{
+      padding-inline: 2rem;
+    }
+    .cv-button{
+      font-size: 1.1rem;
+    }
+
+    .site-logo h1{
+      display: none;
+    }
+
+    .sections-list li{
+      display: none;
+    }
+
 }

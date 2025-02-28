@@ -27,10 +27,10 @@ const Navbar = () => {
     <header>
       <nav className={`nav-top ${showNavbar ? 'show' : 'hide'}`}>
         <div className="site-logo">
-          <img src={SiteLogo} width={40} alt="Logo" />
+          <a href="#main-header"><img src={SiteLogo} width={40} alt="Logo" /></a>
           <h1>Eduardo.Reche</h1>
         </div>
-        <ul>
+        <ul className='sections-list'>
           <li><a href="#main-header">Sobre Mim</a></li>
           <li><a href="#skills">Conhecimentos</a></li>
           <li><a href="#experience">Experiência</a></li>
