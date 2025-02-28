@@ -8,7 +8,7 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  transition: top 0.3s ease-in-out;
+  transition: top 0.5s ease-out;
   background-color: #1D1C1A;
   color: #FAFAFA;
 }
@@ -84,7 +84,7 @@
   color: #1D1C1A;
   font-size: 1.25rem;
   text-decoration: none;
-  padding: .75rem;
+  padding: .6rem;
   border-radius: .5rem;
   font-weight: bold;
   transition: .5s;
@@ -95,5 +95,5 @@
   color: #FAFAFA;
   background-color: #1D1C1A;
   outline: 1px solid #FAFAFA;
-  box-shadow: 6px 6px 0px 0px #FAFAFA;
+  box-shadow: 3px 3px 0px 0px #FAFAFA;
 }
