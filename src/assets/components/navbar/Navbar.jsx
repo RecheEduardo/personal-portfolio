@@ -26,13 +26,20 @@ const Navbar = () => {
     };
   }, [lastScrollY]);
 
+  const navItems = [
+    { name: 'Sobre Mim', href: '#main-header' },
+    { name: 'Conhecimentos', href: '#skills' },
+    { name: 'Experiência', href: '#experience' },
+    { name: 'Projetos', href: '#projects' },
+  ];
+
   return (
     <header>
-      <nav className={`nav-top ${showNavbar ? 'show' : 'hide'}`} >
+      <nav className={`nav-top ${showNavbar ? 'show' : 'hide'}`}>
         <motion.div className="nav-content"
-          animate={{ 
+          animate={{
             opacity: showNavbar ? 1 : 0,
-            y: showNavbar ? 0 : -40  
+            y: showNavbar ? 0 : -40
           }}
           transition={{
             type: 'spring',
@@ -41,28 +48,47 @@ const Navbar = () => {
           }}
         >
           <motion.div className="site-logo"
-            initial={{ opacity: 0, scale: 0.75 }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-            }}
-            transition={{
-              opacity: { duration: 0.75 },
-              scale: { type: "spring", stiffness: 300, damping: 10 },
-            }}
+            initial={{opacity: 0, y: -60, scale: 0.75}}
+            animate={{opacity: 1, y: 0, scale: 1}}
+            transition={{duration: 0.5, ease: "easeIn"}}
           >
             <a href="#main-header"><img src={SiteLogo} width={40} alt="Logo" /></a>
             <h1>Eduardo.Reche</h1>
           </motion.div>
-          <ul className='sections-list'>
-            <li><a href="#main-header">Sobre Mim</a></li>
-            <li><a href="#skills">Conhecimentos</a></li>
-            <li><a href="#experience">Experiência</a></li>
-            <li><a href="#projects">Projetos</a></li>
-          </ul>
-          <a href='/CV_Eduardo_Reche.pdf' target='_blank' className='cv-button'>
+
+          <motion.ul className='sections-list'
+            initial="hidden"
+            animate="show"
+            transition={{duration: 0.25, ease: "easeIn"}}
+            variants={{
+              hidden: { opacity: 0 },
+              show: { opacity: 1, transition: { staggerChildren: 0.25, ease:"easeIn" } }
+            }}
+          >
+            {navItems.map((item) => (
+              <motion.li
+                key={item.name}
+                variants={{
+                  hidden: { opacity: 0, scale: 0.25 },
+                  show: { opacity: 1, scale: 1 }
+                }}
+                transition={{
+                  opacity: { duration: 0.5 },
+                  scale: { type: "spring", stiffness: 100, damping: 10 }
+                }}
+              >
+                <a href={item.href}>{item.name}</a>
+              </motion.li>
+            ))}
+          </motion.ul>
+
+          <motion.a href='/CV_Eduardo_Reche.pdf' target='_blank' className='cv-button'
+            initial={{opacity: 0, y: -60, scale: 0.75}}
+            animate={{opacity: 1, y: 0, scale: 1}}
+            transition={{duration: 0.5, ease: "easeIn"}}
+          >
             <span>Meu CV</span><FaDownload />
-          </a>
+          </motion.a>
         </motion.div>
       </nav>
     </header>
