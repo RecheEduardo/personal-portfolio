@@ -79,7 +79,7 @@ const SkillsSlider = () => {
             whileInView="show"
             viewport={{
                 once: true,
-                margin: "-30% 0px -30% 0px"
+                margin: "-20% 0px -20% 0px"
             }}
         >
             <div className="list">
