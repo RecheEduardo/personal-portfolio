@@ -2744,7 +2744,7 @@
   A 0.21 0.21 0.0 0 0 310.49 365.54
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 245.49 64.57
   C 242.15 66.24 235.73 68.74 232.15 67.19
   Q 230.49 66.48 228.72 66.19
@@ -2754,7 +2754,7 @@
   Q 247.38 63.62 245.49 64.57
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 218.40 81.47
   C 222.52 84.14 225.72 81.27 229.57 80.21
   C 232.73 79.33 234.84 77.16 236.04 74.19
@@ -2774,7 +2774,7 @@
   A 1.23 1.22 -40.8 0 1 218.40 81.47
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 228.30 95.01
   Q 224.33 92.81 217.16 92.18
   Q 215.03 91.99 214.89 89.85
@@ -2786,7 +2786,7 @@
   Q 228.73 95.24 228.30 95.01
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 225.23 96.43
   L 226.28 96.42
   A 0.64 0.64 0.0 0 1 226.88 97.31
@@ -2802,7 +2802,7 @@
   Q 224.73 96.44 225.23 96.43
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 223.49 104.59
   Q 222.98 106.46 221.53 107.37
   Q 221.07 107.65 220.54 107.59
@@ -3044,7 +3044,7 @@
   L 407.97 371.73
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 198.91 121.52
   C 207.32 120.12 215.32 121.68 221.91 126.97
   Q 224.88 129.36 224.57 132.24
@@ -3079,7 +3079,7 @@
   Q 197.65 121.73 198.91 121.52
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 289.98 123.66
   L 289.81 124.78
   Q 287.99 125.64 287.72 127.24
@@ -3124,7 +3124,7 @@
   Q 264.77 141.21 266.42 140.66
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 216.84 112.77
   A 0.80 0.80 0.0 0 1 217.73 112.10
   L 221.10 112.57
@@ -3136,7 +3136,7 @@
   L 216.84 112.77
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 234.73 147.38
   Q 234.65 148.54 233.94 149.41
   Q 233.50 149.95 233.47 149.25
@@ -3148,7 +3148,7 @@
   Q 234.98 143.70 234.73 147.38
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 389.25 170.52
   Q 386.39 171.34 383.99 173.23
   Q 381.54 175.15 378.77 176.54
@@ -3703,7 +3703,7 @@
   Q 364.89 288.89 364.76 288.75
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 214.29 134.12
   A 0.65 0.65 0.0 0 1 213.90 134.95
   L 213.82 134.97
@@ -3726,7 +3726,7 @@
   A 0.78 0.78 0.0 0 1 415.59 134.23
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 179.29 143.50
   Q 179.55 143.30 179.80 143.10
   Q 182.07 151.31 187.41 157.71
@@ -3846,9 +3846,9 @@
   Q 272.27 138.72 266.42 140.66
   Z"
 />
-<ellipse fill="#ffffff" cx="0.00" cy="0.00" transform="translate(133.97,141.67) rotate(99.8)" rx="1.02" ry="0.78"/>
+<ellipse fill="#FAFAFA" cx="0.00" cy="0.00" transform="translate(133.97,141.67) rotate(99.8)" rx="1.02" ry="0.78"/>
 <ellipse fill="#1D1C1A" cx="0.00" cy="0.00" transform="translate(407.16,141.85) rotate(-32.2)" rx="1.58" ry="0.93"/>
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 274.65 184.09
   Q 274.37 184.56 274.55 184.73
   C 271.84 186.11 268.66 188.24 268.74 191.51
@@ -3895,7 +3895,7 @@
   Q 274.68 183.60 274.65 184.09
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 276.24 146.17
   A 1.41 1.41 0.0 0 1 277.08 147.98
   L 275.56 152.15
@@ -3908,8 +3908,8 @@
   Z"
 />
 <ellipse fill="#1D1C1A" cx="0.00" cy="0.00" transform="translate(401.04,146.31) rotate(-45.4)" rx="1.09" ry="0.77"/>
-<ellipse fill="#ffffff" cx="0.00" cy="0.00" transform="translate(194.53,149.52) rotate(-17.0)" rx="1.53" ry="0.84"/>
-<path fill="#ffffff" d="
+<ellipse fill="#FAFAFA" cx="0.00" cy="0.00" transform="translate(194.53,149.52) rotate(-17.0)" rx="1.53" ry="0.84"/>
+<path fill="#FAFAFA" d="
   M 286.09 157.96
   Q 285.36 160.94 287.08 158.40
   Q 289.62 154.62 291.20 149.92
@@ -3926,12 +3926,12 @@
   Q 286.75 155.23 286.09 157.96
   Z"
 />
-<ellipse fill="#ffffff" cx="0.00" cy="0.00" transform="translate(278.81,154.78) rotate(118.3)" rx="3.44" ry="0.54"/>
+<ellipse fill="#FAFAFA" cx="0.00" cy="0.00" transform="translate(278.81,154.78) rotate(118.3)" rx="3.44" ry="0.54"/>
 <ellipse fill="#1D1C1A" cx="0.00" cy="0.00" transform="translate(388.88,153.64) rotate(-23.4)" rx="1.13" ry="0.68"/>
 <ellipse fill="#1D1C1A" cx="0.00" cy="0.00" transform="translate(382.77,158.57) rotate(126.5)" rx="1.74" ry="0.76"/>
-<circle fill="#ffffff" cx="275.50" cy="160.99" r="0.63"/>
+<circle fill="#FAFAFA" cx="275.50" cy="160.99" r="0.63"/>
 <rect fill="#1D1C1A" x="-11.65" y="-0.26" transform="translate(399.60,167.69) rotate(-34.2)" width="23.30" height="0.52" rx="0.26"/>
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 283.77 163.06
   A 0.28 0.28 0.0 0 1 283.94 163.42
   L 283.88 163.57
@@ -3943,7 +3943,7 @@
   L 283.77 163.06
   Z"
 />
-<ellipse fill="#ffffff" cx="0.00" cy="0.00" transform="translate(272.76,163.13) rotate(-44.9)" rx="0.82" ry="0.44"/>
+<ellipse fill="#FAFAFA" cx="0.00" cy="0.00" transform="translate(272.76,163.13) rotate(-44.9)" rx="0.82" ry="0.44"/>
 <path fill="#1D1C1A" d="
   M 374.40 164.98
   Q 374.61 164.36 375.11 164.79
@@ -4049,7 +4049,7 @@
   Z"
 />
 <ellipse fill="#1D1C1A" cx="0.00" cy="0.00" transform="translate(384.91,199.08) rotate(-29.9)" rx="1.53" ry="0.36"/>
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 67.91 419.36
   Q 69.42 419.33 68.20 418.45
   Q 61.28 413.44 54.05 407.92
@@ -4498,7 +4498,7 @@
   Q 392.21 218.33 392.65 217.88
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 208.12 229.49
   A 0.14 0.14 0.0 0 1 207.99 229.64
   L 207.96 229.65
@@ -4562,7 +4562,7 @@
   Z"
 />
 <ellipse fill="#1D1C1A" cx="0.00" cy="0.00" transform="translate(372.00,235.61) rotate(-28.3)" rx="5.05" ry="0.50"/>
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 218.62 236.55
   L 218.52 237.99
   L 216.30 239.41
@@ -4595,8 +4595,8 @@
   Z"
 />
 <rect fill="#1D1C1A" x="-6.32" y="-0.44" transform="translate(370.01,245.34) rotate(-30.5)" width="12.64" height="0.88" rx="0.42"/>
-<rect fill="#ffffff" x="-0.86" y="-4.26" transform="translate(61.35,250.50) rotate(24.3)" width="1.72" height="8.52" rx="0.84"/>
-<path fill="#ffffff" d="
+<rect fill="#FAFAFA" x="-0.86" y="-4.26" transform="translate(61.35,250.50) rotate(24.3)" width="1.72" height="8.52" rx="0.84"/>
+<path fill="#FAFAFA" d="
   M 195.41 319.55
   Q 196.56 316.21 196.78 312.72
   Q 198.05 292.66 199.15 273.01
@@ -4732,7 +4732,7 @@
   Q 364.72 288.51 364.76 288.75
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 419.09 335.90
   L 422.02 337.09
   Q 423.83 337.83 421.89 338.06
@@ -4757,7 +4757,7 @@
   Z"
 />
 <ellipse fill="#1D1C1A" cx="0.00" cy="0.00" transform="translate(385.54,319.34) rotate(95.0)" rx="6.45" ry="3.60"/>
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 273.29 318.33
   Q 273.75 318.36 274.10 318.14
   Q 272.84 321.26 270.30 323.20
@@ -4828,7 +4828,7 @@
   Q 277.67 317.01 280.04 320.49
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 294.30 329.58
   A 0.69 0.69 0.0 0 1 295.05 328.68
   Q 296.10 328.84 296.64 329.76
@@ -4836,7 +4836,7 @@
   Q 294.69 330.72 294.30 329.58
   Z"
 />
-<ellipse fill="#ffffff" cx="0.00" cy="0.00" transform="translate(167.26,330.99) rotate(-37.7)" rx="0.70" ry="0.43"/>
+<ellipse fill="#FAFAFA" cx="0.00" cy="0.00" transform="translate(167.26,330.99) rotate(-37.7)" rx="0.70" ry="0.43"/>
 <path fill="#1D1C1A" d="
   M 230.77 340.60
   Q 231.51 340.42 232.23 340.65
@@ -4857,7 +4857,7 @@
   A 0.34 0.34 0.0 0 0 230.77 340.60
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 350.78 359.49
   Q 351.12 358.42 350.18 359.03
   C 347.86 360.52 346.54 358.24 346.14 356.34
@@ -4920,7 +4920,7 @@
   Q 350.65 359.91 350.78 359.49
   Z"
 />
-<ellipse fill="#ffffff" cx="0.00" cy="0.00" transform="translate(276.13,334.58) rotate(21.7)" rx="1.36" ry="0.56"/>
+<ellipse fill="#FAFAFA" cx="0.00" cy="0.00" transform="translate(276.13,334.58) rotate(21.7)" rx="1.36" ry="0.56"/>
 <path fill="#1D1C1A" d="
   M 26.83 334.92
   L 28.22 339.79
@@ -4943,7 +4943,7 @@
   L 118.03 371.99
   Z"
 />
-<ellipse fill="#ffffff" cx="0.00" cy="0.00" transform="translate(339.75,350.79) rotate(41.4)" rx="4.18" ry="0.99"/>
+<ellipse fill="#FAFAFA" cx="0.00" cy="0.00" transform="translate(339.75,350.79) rotate(41.4)" rx="4.18" ry="0.99"/>
 <path fill="#1D1C1A" d="
   M 52.01 364.16
   C 53.92 363.05 54.54 360.97 56.30 359.65
@@ -4957,7 +4957,7 @@
   Q 51.50 364.45 52.01 364.16
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 309.69 357.58
   Q 309.76 357.36 309.64 357.27
   Q 309.50 357.16 309.31 357.17
@@ -4999,7 +4999,7 @@
   A 1.71 1.67 -27.0 0 0 313.96 356.50
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 310.49 365.54
   A 0.21 0.21 0.0 0 1 310.43 365.94
   Q 298.28 368.04 284.76 367.95
@@ -5012,7 +5012,7 @@
   C 305.15 360.22 306.96 363.80 310.49 365.54
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 381.54 361.10
   Q 382.96 361.17 384.36 361.38
   Q 384.37 361.38 384.38 361.38
@@ -5077,11 +5077,11 @@
   L 381.54 361.10
   Z"
 />
-<ellipse fill="#ffffff" cx="421.50" cy="358.32" rx="1.86" ry="0.38"/>
-<rect fill="#ffffff" x="-3.45" y="-0.64" transform="translate(451.07,360.69) rotate(-2.4)" width="6.90" height="1.28" rx="0.60"/>
-<ellipse fill="#ffffff" cx="0.00" cy="0.00" transform="translate(444.24,361.58) rotate(-13.0)" rx="1.17" ry="0.90"/>
-<ellipse fill="#ffffff" cx="0.00" cy="0.00" transform="translate(428.11,363.73) rotate(-44.4)" rx="1.63" ry="1.17"/>
-<path fill="#ffffff" d="
+<ellipse fill="#FAFAFA" cx="421.50" cy="358.32" rx="1.86" ry="0.38"/>
+<rect fill="#FAFAFA" x="-3.45" y="-0.64" transform="translate(451.07,360.69) rotate(-2.4)" width="6.90" height="1.28" rx="0.60"/>
+<ellipse fill="#FAFAFA" cx="0.00" cy="0.00" transform="translate(444.24,361.58) rotate(-13.0)" rx="1.17" ry="0.90"/>
+<ellipse fill="#FAFAFA" cx="0.00" cy="0.00" transform="translate(428.11,363.73) rotate(-44.4)" rx="1.63" ry="1.17"/>
+<path fill="#FAFAFA" d="
   M 436.53 363.23
   L 438.00 362.63
   A 0.47 0.47 0.0 0 1 438.65 363.07
@@ -5095,7 +5095,7 @@
   Q 435.81 363.52 436.53 363.23
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 426.99 367.36
   Q 427.90 367.87 428.46 367.00
   Q 429.91 364.74 432.20 366.23
@@ -5108,7 +5108,7 @@
   Q 426.04 366.83 426.99 367.36
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 419.34 370.88
   Q 420.02 371.00 420.57 371.39
   Q 421.04 371.72 420.64 372.13
@@ -5122,7 +5122,7 @@
   Q 418.70 370.76 419.34 370.88
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 407.97 371.73
   L 412.86 368.98
   A 0.76 0.76 0.0 0 1 413.87 370.07
@@ -5132,7 +5132,7 @@
   A 0.76 0.76 0.0 0 1 407.97 371.73
   Z"
 />
-<path fill="#ffffff" d="
+<path fill="#FAFAFA" d="
   M 479.76 374.55
   L 482.89 378.32
   A 0.97 0.96 50.6 0 1 482.76 379.68
