@@ -64,9 +64,11 @@
 }
 
 @media (max-width: 750px){
-.main-header{
-    padding-bottom: 1.5rem;
-}
+    .main-header{
+        padding-top: 7rem;
+        padding-bottom: 1.5rem;
+        overflow-x: hidden;
+    }
 
     .greetings-msg{
         gap: 3rem;
@@ -74,4 +76,5 @@
     .greetings-title h1{
         font-size: 3.25rem;
     }
+    .greetings-img{scale: 1.1;}
 }
