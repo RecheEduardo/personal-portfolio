@@ -21,7 +21,7 @@ const containerVariants = {
 };
 
 const iconVariants = {
-  hidden: { opacity: 0, scale: 0.5, x: 60, rotate: 90 },
+  hidden: { opacity: 0, scale: 0.5, x: 90, rotate: 90 },
   show: { 
     opacity: 1, 
     scale: 1, 
@@ -44,13 +44,13 @@ const greetingsMsgVariants = {
 };
 
 const textVariants = {
-  hidden: { opacity: 0, scale: 0.8 },  // Começando invisível e com escala reduzida
+  hidden: { opacity: 0, scale: 0.8 },
   show: { 
     opacity: 1, 
-    scale: 1,  // Escala normal quando aparece
+    scale: 1, 
     transition: { 
       opacity: { duration: 0.5, ease: "easeInOut" },
-      scale: { type: "spring", stiffness: 300, damping: 50 }  // Efeito de pop-in usando spring
+      scale: { type: "spring", stiffness: 300, damping: 50 }
     }
   }
 };
