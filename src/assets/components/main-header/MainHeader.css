@@ -38,18 +38,18 @@
     padding-top: 1.5rem;
 }
 .media-btn{
-    color: #1D1C1A;
+    color: var(--dark-color);
     padding: 0.75rem;
     padding-block: 0.5rem;
     font-size: 1.75rem;
     border-radius: 0.25rem;
-    border: 1px solid #1D1C1A;
+    border: 1px solid var(--dark-color);
     transition: .25s;
 }
 .media-btn:hover{
-    background-color: #1D1C1A;
-    color: #FAFAFA;
-    border: 1px solid #FAFAFA;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
     transition: .25s;
 }
 

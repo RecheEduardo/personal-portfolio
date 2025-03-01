@@ -70,7 +70,7 @@ const Navbar = () => {
                 }}
                 transition={{
                   opacity: { duration: 0.5 },
-                  scale: { type: "spring", stiffness: 100, damping: 10 }
+                  scale: { type: "spring", stiffness: 300, damping: 15 }
                 }}
               >
                 <a href={item.href}>{item.name}</a>

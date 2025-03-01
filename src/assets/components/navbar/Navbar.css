@@ -5,8 +5,8 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #1D1C1A;
-  color: #FAFAFA;
+  background-color: var(--dark-color);
+  color: var(--light-color);
   transition: top 0.3s ease-out;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .nav-top li a {
-  color: #FAFAFA;
+  color: var(--light-color);
   text-decoration: none;
 }
 
@@ -85,8 +85,8 @@
   display: flex;
   align-items: center;
   gap: .65rem;
-  background-color: #FAFAFA;
-  color: #1D1C1A;
+  background-color: var(--light-color);
+  color: var(--dark-color);
   font-size: 1.25rem;
   text-decoration: none;
   padding: .6rem;
@@ -97,10 +97,10 @@
 
 .cv-button:hover {
   transition: .25s;
-  color: #FAFAFA;
-  background-color: #1D1C1A;
-  outline: 1px solid #FAFAFA;
-  box-shadow: 3px 3px 0px 0px #FAFAFA;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  outline: 1px solid var(--light-color);
+  box-shadow: 3px 3px 0px 0px var(--light-color);
 }
 
 @media (max-width: 1200px) {

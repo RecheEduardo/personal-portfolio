@@ -1,10 +1,12 @@
+
+
 .outline{ /* Estilização para textos com borda*/
-    color: #FAFAFA;
-    text-shadow: -5px -1px 0 #1D1C1A, 1px -1px 0 #1D1C1A, -5px 1px 0 #1D1C1A, 1px 1px 0 #1D1C1A;
+    color: var(--light-color);
+    text-shadow: -5px -1px 0 var(--dark-color), 1px -1px 0 var(--dark-color), -5px 1px 0 var(--dark-color), 1px 1px 0 var(--dark-color);
 }
 .outline-reverse{ /* Estilização para textos com borda*/
-    color: #1D1C1A;
-    text-shadow: -1px -1px 0 #FAFAFA, 1px -1px 0 #FAFAFA, -1px 1px 0 #FAFAFA, 1px 1px 0 #FAFAFA;
+    color: var(--dark-color);
+    text-shadow: -1px -1px 0 var(--light-color), 1px -1px 0 var(--light-color), -1px 1px 0 var(--light-color), 1px 1px 0 var(--light-color);
 }
 
 @keyframes fadeInDown {

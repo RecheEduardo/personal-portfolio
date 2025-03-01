@@ -19,7 +19,7 @@ ul {
 }
 
 .footer {
-  background-color: #1D1C1A;
+  background-color: var(--dark-color);
   padding-top: 4rem;
   padding-bottom: 3rem;
 }
@@ -33,7 +33,7 @@ ul {
     font-size: 25px;
     font-family: 'Prata';
     font-style: italic;
-    color: #fafafa;
+    color: var(--light-color);
     text-transform: capitalize;
     font-weight: 400;
     position: relative;
@@ -41,7 +41,7 @@ ul {
 
 .footer-col h4 {
   font-size: 18px;
-  color: #fafafa;
+  color: var(--light-color);
   text-transform: capitalize;
   margin-bottom: 35px;
   position: relative;
@@ -74,7 +74,7 @@ ul {
 }
 
 .footer-col ul li a:hover {
-  color: #FAFAFA;
+  color: var(--light-color);
   padding-left: 8px;
 }
 
@@ -87,13 +87,13 @@ ul {
   text-align: center;
   line-height: 40px;
   border-radius: .5rem;
-  color: #FAFAFA;
+  color: var(--light-color);
   transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover {
   color: #1D1C1A;
-  background-color: #FAFAFA;
+  background-color: var(--light-color);
 }
 
 .page-title{

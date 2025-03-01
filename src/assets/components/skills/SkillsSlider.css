@@ -14,8 +14,8 @@
 }
 
 .list .item:hover{
-    background-color: #1D1C1A;
-    color: #FAFAFA;
+    background-color: var(--dark-color);
+    color: var(--light-color);
     transition: .25s;
     scale: 0.95;
 }
@@ -45,7 +45,7 @@
     width: var(--width);
     height: var(--height);
     position: absolute;
-    border: 1px solid #1D1C1A;
+    border: 1px solid var(--dark-color);
     border-radius: 1rem;
 }
 

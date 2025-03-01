@@ -1,6 +1,6 @@
 .experience{
-    background-color: #1D1C1A;
-    color: #FAFAFA;
+    background-color: var(--dark-color);
+    color: var(--light-color);
     padding-block: 3rem;
 }
 .experience h1{
