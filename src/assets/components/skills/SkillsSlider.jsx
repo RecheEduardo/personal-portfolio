@@ -8,7 +8,21 @@ import { SiRubyonrails, SiSqlite } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import SkillBadge from "./SkillBadge";
 
+import { motion } from "framer-motion";
+
 const SkillsSlider = () => {
+
+    const contentVariants = {
+        hidden: { opacity: 0, scale: 0.5 },
+        show: { 
+            opacity: 1, 
+            scale: 1, 
+            transition: { 
+            opacity: { duration: 0.5, ease: "easeInOut" },
+            scale: { type: "spring", stiffness: 150, damping: 15 }
+            }
+        }
+    };
 
     const topSlider = [
         {icon: <FaHtml5 />, name: 'HTML', position: 1},
@@ -32,11 +46,18 @@ const SkillsSlider = () => {
 
   return (
     <div className="sliders">
-        <div className="slider-left" 
+        <motion.div className="slider-left" 
             style={{"--quantity": 7, 
                     "--width": '15rem',
-                    "--height": '15rem' }
-        }>
+                    "--height": '15rem' }}
+            variants={contentVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{
+                once: true,
+                margin: "-30% 0px -30% 0px"
+            }}
+        >
             <div className="list">
                 {topSlider.map((badge, index) => {
                         return(<SkillBadge key={index} 
@@ -47,13 +68,20 @@ const SkillsSlider = () => {
                     })
                 }
             </div>
-        </div>
+        </motion.div>
 
-        <div className="slider-right" 
+        <motion.div className="slider-right" 
             style={{"--quantity": 7, 
                     "--width": '15rem',
-                    "--height": '15rem' }
-        }>
+                    "--height": '15rem' }}
+            variants={contentVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{
+                once: true,
+                margin: "-30% 0px -30% 0px"
+            }}
+        >
             <div className="list">
                 {bottomSlider.map((badge, index) => {
                         return(<SkillBadge key={index} 
@@ -64,7 +92,7 @@ const SkillsSlider = () => {
                     })
                 }
             </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

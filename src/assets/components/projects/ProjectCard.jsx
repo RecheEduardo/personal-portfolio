@@ -1,7 +1,22 @@
 import React, { useRef } from 'react';
 import './ProjectCard.css';
+import { motion } from 'framer-motion';
 
 const ProjectCard = ({ projectTitle, projectURL, projectImage }) => {
+
+  // Variantes para o efeito PopIn (fade e scale)
+  const cardVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    show: { 
+      opacity: 1, 
+      scale: 1, 
+      transition: { 
+        opacity: { duration: 0.5, ease: "easeInOut" },
+        scale: { type: "spring", stiffness: 150, damping: 8 }
+      }
+    }
+  };
+
   const cardRef = useRef(null);
 
   const rotateToMouse = (e) => {
@@ -47,7 +62,7 @@ const ProjectCard = ({ projectTitle, projectURL, projectImage }) => {
   };
 
   return (
-    <a
+    <motion.a
       className="project-card"
       target="_blank"
       href={projectURL}
@@ -55,10 +70,14 @@ const ProjectCard = ({ projectTitle, projectURL, projectImage }) => {
       style={{ backgroundImage: `url(${projectImage})` }}
       onMouseMove={rotateToMouse}
       onMouseLeave={resetStyles}
+      variants={cardVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, margin: "-40% 0px -40% 0px" }} // <-- Cada card só aparece ao chegar na tela!
     >
       {projectTitle}
       <div className="glow" />
-    </a>
+    </motion.a>
   );
 };
 

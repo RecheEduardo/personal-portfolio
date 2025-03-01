@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Projects.css'
 import ProjectCard from './ProjectCard'
 
@@ -10,7 +10,21 @@ import CrudShowcaseIMG from "../../icons/projects-icons/banner_crudshowcase.png"
 import MultistepFormIMG from "../../icons/projects-icons/banner_multistepform.png"
 import OthersProjects from "../../icons/projects-icons/others.png"
 
+import { motion } from 'framer-motion'
+
 const Projects = () => {
+
+  const textVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    show: { 
+      opacity: 1, 
+      scale: 1, 
+      transition: { 
+        opacity: { duration: 0.5, ease: "easeInOut" },
+        scale: { type: "spring", stiffness: 150, damping: 8 }
+      }
+    }
+  };
 
   const Cards = [
     {title: "Blogalizando", url: 'https://github.com/RecheEduardo/blogalizando', image: BlogalizandoIMG},
@@ -23,18 +37,24 @@ const Projects = () => {
 
   return (
     <section className='projects' id='projects'>
-      <h1>Meus <span>Projetos</span></h1>
+      <motion.h1
+        variants={textVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-40% 0px -40% 0px" }}
+      >
+        Meus <span>Projetos</span>
+      </motion.h1>
+      
       <div className="cards-slider">
-        {Cards.map((project, index) => {
-          return (
-            <ProjectCard 
-              key={index} 
-              projectTitle={project.title} 
-              projectURL={project.url} 
-              projectImage={project.image}
-            />)
-          })
-        } 
+        {Cards.map((project, index) => (
+          <ProjectCard 
+            key={index} 
+            projectTitle={project.title} 
+            projectURL={project.url} 
+            projectImage={project.image}
+          />
+        ))}
       </div>
     </section>
   )

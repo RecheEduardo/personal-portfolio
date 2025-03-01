@@ -2,6 +2,7 @@
     background-color: var(--dark-color);
     color: var(--light-color);
     padding-block: 3rem;
+    overflow-x: hidden;
 }
 .experience h1{
     font-size: 5rem;

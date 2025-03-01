@@ -132,7 +132,7 @@
 
     @keyframes autoRun {
         0% { left: 100%; }
-        100% { left: calc(var(--width) * -0.95); } /* Duplica para manter transição fluida */
+        100% { left: calc(var(--width) * -0.95); }
     }
 
     @keyframes autoRunRev {

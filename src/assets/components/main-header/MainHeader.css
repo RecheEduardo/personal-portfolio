@@ -67,7 +67,7 @@
     .main-header{
         padding-top: 7rem;
         padding-bottom: 1.5rem;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .greetings-msg{
