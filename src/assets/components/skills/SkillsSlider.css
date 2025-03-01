@@ -1,11 +1,18 @@
-.sliders{
+.sliders {
     width: 75%;
     display: flex;
     flex-direction: column;
     gap: 5rem;
 }
 
-.item{
+/* Valores padrão (desktop) */
+.slider-left, .slider-right {
+    --quantity: 7;
+    --width: 15rem;
+    --height: 15rem;
+}
+
+.item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,27 +20,28 @@
     transition: .25s;
 }
 
-.list .item:hover{
+.list .item:hover {
     background-color: var(--dark-color);
     color: var(--light-color);
     transition: .25s;
     scale: 0.95;
 }
 
-.item span{
+.item span {
     font-size: 1.7rem;
     font-weight: 900;
     cursor: default;
+    text-align: center;
 }
 
-.slider-left,.slider-right{
+.slider-left, .slider-right {
     height: var(--height);
     overflow: hidden;
-    mask-image: linear-gradient( to right, transparent, #000 10% 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
 }
 
 .slider-left .list,
-.slider-right .list{
+.slider-right .list {
     display: flex;
     width: 100%;
     min-width: calc(var(--width) * var(--quantity));
@@ -41,7 +49,7 @@
 }
 
 .slider-left .list .item,
-.slider-right .list .item{
+.slider-right .list .item {
     width: var(--width);
     height: var(--height);
     position: absolute;
@@ -49,87 +57,103 @@
     border-radius: 1rem;
 }
 
-.slider-left .list .item{
+.slider-left .list .item {
     left: 100%;
     animation: autoRun 10s linear infinite;
-    animation-delay: calc((10s/ var(--quantity)) * (var(--position) - 1));
+    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1));
 }
-.slider-right .list .item{
+.slider-right .list .item {
     right: 100%;
     animation: autoRunRev 10s linear infinite;
-    animation-delay: calc((10s/ var(--quantity)) * (var(--position) - 1));
+    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1));
 }
 
 .slider-left .list .item svg,
-.slider-right .list .item svg{
+.slider-right .list .item svg {
     width: 100%;
     font-size: 9.5rem;
 }
 
 .slider-left:hover .item,
-.slider-right:hover .item{
+.slider-right:hover .item {
     animation-play-state: paused !important;
 }
 
 @keyframes autoRun {
-    from{
+    from {
         left: 100%;
     }
-    to{
+    to {
         left: calc(var(--width) * -1);
     }
 }
 
 @keyframes autoRunRev {
-    from{
+    from {
         right: 100%;
     }
-    to{
+    to {
         right: calc(var(--width) * -1);
     }
 }
 
 @media (max-width: 1024px) {
-
     .slider-left .list .item,
-    .slider-right .list .item{
+    .slider-right .list .item {
        width: 12rem;
        height: 12rem;
        padding: 0.5rem;
     }
 
-    .sliders{
+    .sliders {
         gap: 1.25rem;
         width: 85svw;
     }
   
-    .item span{
+    .item span {
         font-size: 1.25rem;
     }
-    .item svg{
+    .item svg {
         font-size: 2rem;
     }
 }
 
 @media (max-width: 715px) {
-    .item {
-        width: 8rem;
-        height: 8rem;
-        padding: 0.25rem; 
-    }
-    .item svg {
-        font-size: 7.5rem !important;
+    .sliders{
+        gap: 3rem;
     }
 
-    .item span {
-        font-size: 1.25rem; /* Reduz a fonte do nome da skill */
+    .slider-left, .slider-right {
+        --width: 7rem;
+        --height: 7rem;
     }
-
+    
     .slider-left .list .item,
     .slider-right .list .item {
-        animation-delay: calc((10s / (var(--quantity))) * (var(--position) - 1));
+        width: 7rem !important;
+        height: 7rem !important;
+        padding: 0.5rem !important;
     }
-
+    
+    .slider-left .list .item svg,
+    .slider-right .list .item svg {
+        font-size: 6rem !important;
+    }
+    
+    .slider-left .list .item span,
+    .slider-right .list .item span {
+        font-size: 0.95rem !important;
+    }
+    
+    .slider-left .list .item {
+        animation: autoRun 5s linear infinite;
+        animation-delay: calc((5s / var(--quantity)) * (var(--position) - 1));
+    }
+    .slider-right .list .item {
+        animation: autoRunRev 5s linear infinite;
+        animation-delay: calc((5s / var(--quantity)) * (var(--position) - 1));
+    }
+    
     @keyframes autoRun {
         0% { left: 100%; }
         100% { left: calc(var(--width) * -0.95); }

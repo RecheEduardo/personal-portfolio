@@ -4,7 +4,8 @@
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-    padding-block: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
 }
 .skills h1{
     font-size: 6rem;
@@ -15,6 +16,7 @@
 @media (max-width: 1024px) {
     .skills{
         padding-block: 1.75rem;
+        padding-bottom: 4rem;
     }
     .skills h1{
         font-size: 5rem;
