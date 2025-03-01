@@ -6,3 +6,67 @@
     color: #1D1C1A;
     text-shadow: -1px -1px 0 #FAFAFA, 1px -1px 0 #FAFAFA, -1px 1px 0 #FAFAFA, 1px 1px 0 #FAFAFA;
 }
+
+@keyframes fadeInDown {
+    from{
+        opacity: 0.5;
+        transform: translateY(-60px);
+    }
+  
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from{
+        opacity: 0.5;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+  
+  @keyframes popUp {
+    from{
+        transform: translateY(30px);
+        scale: 0.8;
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        scale: 1;
+        opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    from {
+        transform: scale(0.70);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+  
+  
+  .popIn{
+    animation: popIn 1.15s !important;
+  }
+  
+  .fadeInDown{
+    animation: fadeInDown 1s !important;
+  }
+  
+  .fadeInUp{
+    animation: fadeInUp 1s !important;
+  }
+  
+  .popUp{
+    animation: popUp 1.5s !important;
+  }

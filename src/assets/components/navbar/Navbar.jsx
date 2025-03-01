@@ -47,14 +47,10 @@ const Navbar = () => {
             damping: 15,
           }}
         >
-          <motion.div className="site-logo"
-            initial={{opacity: 0, y: -60, scale: 0.75}}
-            animate={{opacity: 1, y: 0, scale: 1}}
-            transition={{duration: 0.5, ease: "easeIn"}}
-          >
+          <div className="site-logo popIn">
             <a href="#main-header"><img src={SiteLogo} width={40} alt="Logo" /></a>
             <h1>Eduardo.Reche</h1>
-          </motion.div>
+          </div>
 
           <motion.ul className='sections-list'
             initial="hidden"
@@ -82,13 +78,9 @@ const Navbar = () => {
             ))}
           </motion.ul>
 
-          <motion.a href='/CV_Eduardo_Reche.pdf' target='_blank' className='cv-button'
-            initial={{opacity: 0, y: -60, scale: 0.75}}
-            animate={{opacity: 1, y: 0, scale: 1}}
-            transition={{duration: 0.5, ease: "easeIn"}}
-          >
+          <a href='/CV_Eduardo_Reche.pdf' target='_blank' className='cv-button popIn' >
             <span>Meu CV</span><FaDownload />
-          </motion.a>
+          </a>
         </motion.div>
       </nav>
     </header>

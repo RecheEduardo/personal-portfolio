@@ -2,6 +2,7 @@ import React from 'react'
 import './MainHeader.css'
 import Icon1 from '../../icons/icon1.svg'
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { motion } from 'framer-motion';
 import { IoMdMail } from "react-icons/io";
 
 const MainHeader = () => {
@@ -21,7 +22,13 @@ const MainHeader = () => {
             <a href="mailto:eduardorechemartins2006@gmail.com" className='media-btn' target='_blank'><IoMdMail/></a>
         </div>
       </div>
-      <img src={Icon1} className="greetings-img"/>
+      <motion.img src={Icon1} className="greetings-img"
+      variants={{
+        hidden: { opacity: 0, y: 150 },
+        show: { opacity: 1, y: 0, transition: { duration: 0.5 }},
+      }}
+      initial="hidden"
+      animate="show"/>
     </section>
   )
 }
