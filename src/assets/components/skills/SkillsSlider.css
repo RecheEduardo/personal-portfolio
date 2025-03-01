@@ -146,12 +146,12 @@
     }
     
     .slider-left .list .item {
-        animation: autoRun 5s linear infinite;
-        animation-delay: calc((5s / var(--quantity)) * (var(--position) - 1));
+        animation: autoRun 9s linear infinite;
+        animation-delay: calc((9s / var(--quantity)) * (var(--position) - 1));
     }
     .slider-right .list .item {
-        animation: autoRunRev 5s linear infinite;
-        animation-delay: calc((5s / var(--quantity)) * (var(--position) - 1));
+        animation: autoRunRev 9s linear infinite;
+        animation-delay: calc((9s / var(--quantity)) * (var(--position) - 1));
     }
     
     @keyframes autoRun {
