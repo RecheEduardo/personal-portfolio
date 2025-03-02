@@ -58,26 +58,7 @@ Este portfólio foi desenvolvido para demonstrar meus projetos, experiências, h
 
 # 📂 Estrutura do Projeto e Detalhes de Implementação
 
-## 1. Renderização Inicial (index.js)
-
-O arquivo `index.js` é o ponto de entrada da aplicação, onde o React renderiza o componente principal no DOM. O uso do `StrictMode` garante boas práticas e ajuda a identificar potenciais problemas.
-
-~~~jsx
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
-~~~
-
----
-
-## 2. Composição do Portfólio (App.jsx)
+## 1. Composição do Portfólio (App.jsx)
 
 O componente `App.jsx` reúne todos os componentes principais do portfólio, como Navbar, MainHeader, Skills, Experience, Projects, e Footer. Essa organização modular facilita a manutenção e a escalabilidade.
 
@@ -109,7 +90,7 @@ export default App
 
 ---
 
-## 3. Animações e Interatividade com Framer Motion
+## 2. Animações e Interatividade com Framer Motion
 
 **Exemplo: Componente Experience**
 
@@ -145,7 +126,7 @@ Essas variantes são aplicadas nos elementos com as propriedades `initial`, `ani
 
 ---
 
-## 4. Uso de Arrays e Mapeamento para Criação de Componentes
+## 3. Uso de Arrays e Mapeamento para Criação de Componentes
 
 **Exemplo: Componente Projects**
 
@@ -185,7 +166,7 @@ Este padrão de mapeamento é amplamente utilizado no projeto para renderizar li
 
 ---
 
-## 5. Efeito 3D e Interatividade nos Cards de Projeto
+## 4. Efeito 3D e Interatividade nos Cards de Projeto
 
 **Exemplo: Componente ProjectCard**
 
@@ -231,7 +212,7 @@ Essa implementação torna cada projeto visualmente atraente e interativo, difer
 
 ---
 
-## 6. Navegação e Comportamento da Navbar
+## 5. Navegação e Comportamento da Navbar
 
 **Exemplo: Componente Navbar**
 
