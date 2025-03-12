@@ -75,7 +75,7 @@ const MainHeader = () => {
           variants={textVariants}
         >
           <h1>Olá! Sou <span>Eduardo</span>, seja</h1>
-          <h1><span>bem vindo</span> ao meu <span className="outline">mundo</span>...</h1>
+          <h1><span>bem-vindo</span> ao meu <span className="outline">mundo</span>...</h1>
         </motion.div>
 
         <motion.p 
