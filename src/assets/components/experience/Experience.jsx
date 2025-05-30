@@ -79,7 +79,7 @@ const Experience = () => {
           <div className="card-header">
             <div className="job-title">
               <img src={LogoProdesp} width={50} style={{ borderRadius: "1.25rem" }} />
-              <h2>Database Researcher na PRODESP</h2>
+              <h2>Gerenciador de dados e documentos na PRODESP</h2>
             </div>
             <div className="job-time">
               jun. 2024 - Atual
