@@ -9,6 +9,7 @@ import ProjetoAcmeIMG from "../../icons/projects-icons/banner_projetoacme.png"
 import CrudShowcaseIMG from "../../icons/projects-icons/banner_crudshowcase.png"
 import MultistepFormIMG from "../../icons/projects-icons/banner_multistepform.png"
 import VueDexIMG from "../../icons/projects-icons/banner_vuedex.png"
+import DataForgeIMG from "../../icons/projects-icons/banner_dataforge.png"
 import OthersProjects from "../../icons/projects-icons/others.png"
 
 import { motion } from 'framer-motion'
@@ -30,10 +31,11 @@ const Projects = () => {
   const Cards = [
     {title: "Blogalizando", url: 'https://github.com/RecheEduardo/blogalizando', image: BlogalizandoIMG},
     {title: "Multistep Form", url: 'https://multistep-reactjs-form.vercel.app/', image: MultistepFormIMG},
+    {title: "React Quiz", url: 'https://themed-quiz.vercel.app/', image: ReactQuizIMG},
+    {title: "DataForge", url: 'https://github.com/RecheEduardo/DataForge', image: DataForgeIMG},
+    {title: "VueDex", url: 'https://eduardo-pokedex.vercel.app/', image: VueDexIMG},
     {title: "CRUD Showcase", url: 'https://github.com/RecheEduardo/crud-showcase', image: CrudShowcaseIMG},
     {title: "Projeto ACME", url: 'https://github.com/RecheEduardo/projeto-acme', image: ProjetoAcmeIMG},
-    {title: "VueDex", url: 'https://eduardo-pokedex.vercel.app/', image: VueDexIMG},
-    {title: "React Quiz", url: 'https://themed-quiz.vercel.app/', image: ReactQuizIMG},
     {url: 'https://github.com/RecheEduardo?tab=repositories', image: OthersProjects},
   ]
 
