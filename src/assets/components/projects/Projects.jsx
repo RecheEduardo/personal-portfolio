@@ -29,12 +29,12 @@ const Projects = () => {
   };
 
   const Cards = [
-    {title: "Blogalizando", url: 'https://github.com/RecheEduardo/blogalizando', image: BlogalizandoIMG},
+    {title: "Blogalizando", url: 'https://blogalizando.onrender.com/', image: BlogalizandoIMG},
     {title: "Multistep Form", url: 'https://multistep-reactjs-form.vercel.app/', image: MultistepFormIMG},
     {title: "React Quiz", url: 'https://themed-quiz.vercel.app/', image: ReactQuizIMG},
     {title: "DataForge", url: 'https://github.com/RecheEduardo/DataForge', image: DataForgeIMG},
     {title: "VueDex", url: 'https://eduardo-pokedex.vercel.app/', image: VueDexIMG},
-    {title: "CRUD Showcase", url: 'https://github.com/RecheEduardo/crud-showcase', image: CrudShowcaseIMG},
+    {title: "CRUD Showcase", url: 'https://crudshowcase.free.nf/', image: CrudShowcaseIMG},
     {title: "Projeto ACME", url: 'https://github.com/RecheEduardo/projeto-acme', image: ProjetoAcmeIMG},
     {url: 'https://github.com/RecheEduardo?tab=repositories', image: OthersProjects},
   ]
