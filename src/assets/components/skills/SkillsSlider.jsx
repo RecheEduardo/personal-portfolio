@@ -2,7 +2,7 @@ import React from "react";
 import "./SkillsSlider.css";
 /* Importando Logos para o Slider */
 import { FaHtml5, FaJsSquare, FaPhp, FaGitAlt,
-  FaAngular, FaBootstrap, FaNodeJs, FaSass, FaReact } from "react-icons/fa";
+  FaVuejs, FaBootstrap, FaNodeJs, FaSass, FaReact } from "react-icons/fa";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { SiRubyonrails, SiSqlite } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
@@ -29,7 +29,7 @@ const SkillsSlider = () => {
     { icon: <FaJsSquare />, name: 'JavaScript', position: 2 },
     { icon: <FaPhp />, name: 'PHP', position: 3 },
     { icon: <FaGitAlt />, name: 'Git', position: 4 },
-    { icon: <FaAngular />, name: 'Angular', position: 5 },
+    { icon: <FaVuejs />, name: 'Vue.Js', position: 5 },
     { icon: <FaBootstrap />, name: 'Bootstrap', position: 6 },
     { icon: <FaReact />, name: 'React.Js', position: 7 },
   ];
