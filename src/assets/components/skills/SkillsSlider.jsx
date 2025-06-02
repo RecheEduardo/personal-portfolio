@@ -2,9 +2,9 @@ import React from "react";
 import "./SkillsSlider.css";
 /* Importando Logos para o Slider */
 import { FaHtml5, FaJsSquare, FaPhp, FaGitAlt,
-  FaVuejs, FaBootstrap, FaNodeJs, FaSass, FaReact } from "react-icons/fa";
+  FaVuejs, FaBootstrap, FaNodeJs, FaSass, FaReact, FaPython } from "react-icons/fa";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
-import { SiRubyonrails, SiSqlite } from "react-icons/si";
+import { SiFlask, SiRubyonrails, SiSqlite } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import SkillBadge from "./SkillBadge";
 
@@ -32,6 +32,7 @@ const SkillsSlider = () => {
     { icon: <FaVuejs />, name: 'Vue.Js', position: 5 },
     { icon: <FaBootstrap />, name: 'Bootstrap', position: 6 },
     { icon: <FaReact />, name: 'React.Js', position: 7 },
+    { icon: <FaPython />, name: 'Python', position: 8 },
   ];
 
   const bottomSlider = [
@@ -42,6 +43,7 @@ const SkillsSlider = () => {
     { icon: <BiLogoPostgresql />, name: 'PostgreSQL', position: 5 },
     { icon: <BiLogoTypescript />, name: 'TypeScript', position: 6 },
     { icon: <SiSqlite />, name: 'SQLite3', position: 7 },
+    { icon: <SiFlask />, name: 'Flask API', position: 8 },
   ];
 
   return (
