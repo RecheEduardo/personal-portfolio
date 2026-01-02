@@ -41,9 +41,12 @@
 }
 
 .card-body{
-    font-size: 1.15rem;
     padding-top: 1.25rem;
     border-top: 1px solid #FAFAFA46;
+}
+.card-body p{
+    font-size: 1.15rem;
+    line-height: 2rem;
 }
 .card-body p strong{
     text-decoration: underline;
@@ -68,5 +71,9 @@
     .card-body{
         font-size: 1rem;
         line-height: 1.7rem;
+    }
+
+    .job-title h2{  
+        font-size: 1.5rem;
     }
 }

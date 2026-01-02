@@ -2,9 +2,9 @@ import React from "react";
 import "./SkillsSlider.css";
 /* Importando Logos para o Slider */
 import { FaHtml5, FaJsSquare, FaPhp, FaGitAlt,
-  FaVuejs, FaBootstrap, FaNodeJs, FaSass, FaReact, FaPython } from "react-icons/fa";
+  FaVuejs, FaBootstrap, FaNodeJs, FaSass, FaReact, FaPython, FaShopify } from "react-icons/fa";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
-import { SiFlask, SiRubyonrails, SiSqlite } from "react-icons/si";
+import { SiFlask, SiRubyonrails, SiSqlite, SiVtex } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import SkillBadge from "./SkillBadge";
 
@@ -27,23 +27,25 @@ const SkillsSlider = () => {
   const topSlider = [
     { icon: <FaHtml5 />, name: 'HTML', position: 1 },
     { icon: <FaJsSquare />, name: 'JavaScript', position: 2 },
-    { icon: <FaPhp />, name: 'PHP', position: 3 },
-    { icon: <FaGitAlt />, name: 'Git', position: 4 },
-    { icon: <FaVuejs />, name: 'Vue.Js', position: 5 },
-    { icon: <FaBootstrap />, name: 'Bootstrap', position: 6 },
-    { icon: <FaReact />, name: 'React.Js', position: 7 },
-    { icon: <FaPython />, name: 'Python', position: 8 },
+    { icon: <FaGitAlt />, name: 'Git', position: 3 },
+    { icon: <FaReact />, name: 'React.Js', position: 4 },
+    { icon: <FaShopify />, name: 'Shopify', position: 5 },
+    { icon: <FaPhp />, name: 'PHP', position: 6 },
+    { icon: <FaVuejs />, name: 'Vue.Js', position: 7 },
+    { icon: <FaBootstrap />, name: 'Bootstrap', position: 8 },
+    { icon: <FaPython />, name: 'Python', position: 9 },
   ];
-
+  
   const bottomSlider = [
     { icon: <FaNodeJs />, name: 'Node.Js', position: 1 },
     { icon: <GrMysql />, name: 'MySQL', position: 2 },
-    { icon: <SiRubyonrails />, name: 'Ruby on Rails', position: 3 },
-    { icon: <FaSass />, name: 'SASS', position: 4 },
-    { icon: <BiLogoPostgresql />, name: 'PostgreSQL', position: 5 },
-    { icon: <BiLogoTypescript />, name: 'TypeScript', position: 6 },
-    { icon: <SiSqlite />, name: 'SQLite3', position: 7 },
-    { icon: <SiFlask />, name: 'Flask API', position: 8 },
+    { icon: <BiLogoTypescript />, name: 'TypeScript', position: 3 },
+    { icon: <SiVtex />, name: 'VTEX IO', position: 4 },
+    { icon: <SiRubyonrails />, name: 'Ruby on Rails', position: 5 },
+    { icon: <FaSass />, name: 'SASS', position: 6 },
+    { icon: <BiLogoPostgresql />, name: 'PostgreSQL', position: 7 },
+    { icon: <SiSqlite />, name: 'SQLite3', position: 8 },
+    { icon: <SiFlask />, name: 'Flask API', position: 9 },
   ];
 
   return (
