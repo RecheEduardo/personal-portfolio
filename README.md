@@ -4,27 +4,27 @@
 
 ---
 
-# 📖 Visão Geral
+# Visão Geral
 
-Este portfólio foi desenvolvido para demonstrar meus projetos, experiências, habilidades e conquistas como desenvolvedor full stack. A aplicação utiliza uma interface moderna, interativa e repleta de animações, construída com **React.js**, **CSS3**, **Framer Motion** e **React Icons**. Cada parte do projeto foi cuidadosamente pensada para proporcionar uma experiência dinâmica e envolvente. 💻✨
+Este portfólio foi desenvolvido para demonstrar meus projetos, experiências, habilidades e conquistas como desenvolvedor full stack. A aplicação utiliza uma interface moderna, interativa e repleta de animações, construída com **React.js**, **CSS3**, **Framer Motion** e **React Icons**. Cada parte do projeto foi cuidadosamente pensada para proporcionar uma experiência dinâmica e envolvente!
 
 ---
 
-# 🌟 Funcionalidades e Destaques
+# Funcionalidades e Destaques
 
 - **Animações Dinâmicas:** Toda a interface ganha vida com animações suaves utilizando _Framer Motion_, que controlam efeitos de fade, scale e rotações.
   
-- **Interatividade nos Cards:** Os cards dos projetos possuem um efeito 3D que reage ao movimento do mouse, com um brilho dinâmico (_glow_) que realça cada item. 🔥
+- **Interatividade nos Cards:** Os cards dos projetos possuem um efeito 3D que reage ao movimento do mouse, com um brilho dinâmico (_glow_) que realça cada item.
   
-- **Navbar Inteligente:** A barra de navegação se oculta e reaparece conforme o scroll da página, garantindo uma experiência de navegação limpa e sem distrações. 📜
+- **Navbar Inteligente:** A barra de navegação se oculta e reaparece conforme o scroll da página, garantindo uma experiência de navegação limpa e sem distrações.
   
 - **Mapeamento de Arrays para Componentes:** Arrays de objetos são usados para gerar dinamicamente componentes como _ProjectCard_ e _SkillBadge_, permitindo fácil manutenção e escalabilidade.
   
-- **Responsividade:** Design adaptativo para oferecer uma ótima experiência tanto em dispositivos desktop quanto mobile. 📱💻
+- **Responsividade:** Design adaptativo para oferecer uma ótima experiência tanto em dispositivos desktop quanto mobile.
 
 ---
 
-# 🛠️ Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" height="35"  />
 
@@ -56,7 +56,7 @@ Este portfólio foi desenvolvido para demonstrar meus projetos, experiências, h
 
 ---
 
-# 📂 Estrutura do Projeto e Detalhes de Implementação
+# Estrutura do Projeto e Detalhes de Implementação
 
 ## 1. Composição do Portfólio (App.jsx)
 
@@ -245,7 +245,7 @@ Essa lógica contribui para uma experiência de navegação mais limpa e intuiti
 
 ---
 
-# 🚀 Como Rodar o Projeto Localmente
+# Como Rodar o Projeto Localmente
 
 Para testar ou desenvolver localmente, siga estes passos:
 
@@ -264,7 +264,7 @@ Para testar ou desenvolver localmente, siga estes passos:
 
 ---
 
-# 🤝 Contribuições
+# Contribuições
 
 Este projeto é open source e está em constante evolução!  
 Se você tiver sugestões, encontrar bugs ou desejar colaborar, fique à vontade para:
@@ -277,7 +277,7 @@ Toda contribuição é muito bem-vinda! 💡🔧
 
 ---
 
-# 🎨 Considerações Finais
+# Considerações Finais
 
 - **Design & Interatividade:** Cada detalhe foi pensado para criar uma experiência visual cativante e uma navegação intuitiva.
   
