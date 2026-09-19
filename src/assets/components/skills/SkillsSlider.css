@@ -7,7 +7,6 @@
 
 /* Valores padrão (desktop) */
 .slider-left, .slider-right {
-    --quantity: 9;
     --width: 15rem;
     --height: 15rem;
 }

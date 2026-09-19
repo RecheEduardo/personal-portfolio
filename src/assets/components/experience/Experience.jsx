@@ -1,8 +1,7 @@
-import React from 'react';
 import './Experience.css';
 
 import { motion } from 'framer-motion';
-import { textVariants, containerVariants, fadeInLeft, fadeInRight } from './Variants';
+import { textVariants, containerVariants, fadeInLeft } from './Variants';
 import { experienceSchema } from './Schema';
 
 const Experience = () => {

@@ -1,11 +1,11 @@
-import React from "react";
 import "./SkillsSlider.css";
 /* Importando Logos para o Slider */
-import { FaHtml5, FaJsSquare, FaPhp, FaGitAlt,
-  FaVuejs, FaBootstrap, FaNodeJs, FaSass, FaReact, FaPython, FaShopify } from "react-icons/fa";
+import { FaPhp, FaGitAlt,
+  FaVuejs, FaNodeJs, FaSass, FaReact, FaPython, 
+  FaJava,
+  FaAws} from "react-icons/fa";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
-import { SiFlask, SiRubyonrails, SiSqlite, SiVtex } from "react-icons/si";
-import { GrMysql } from "react-icons/gr";
+import { SiNestjs, SiRubyonrails, SiSpringboot, SiSqlite, SiTailwindcss } from "react-icons/si";
 import SkillBadge from "./SkillBadge";
 
 import { motion } from "framer-motion";
@@ -25,27 +25,25 @@ const SkillsSlider = () => {
   };
 
   const topSlider = [
-    { icon: <FaHtml5 />, name: 'HTML', position: 1 },
-    { icon: <FaJsSquare />, name: 'JavaScript', position: 2 },
-    { icon: <FaGitAlt />, name: 'Git', position: 3 },
-    { icon: <FaReact />, name: 'React.Js', position: 4 },
-    { icon: <FaShopify />, name: 'Shopify', position: 5 },
-    { icon: <FaPhp />, name: 'PHP', position: 6 },
-    { icon: <FaVuejs />, name: 'Vue.Js', position: 7 },
-    { icon: <FaBootstrap />, name: 'Bootstrap', position: 8 },
-    { icon: <FaPython />, name: 'Python', position: 9 },
+    { icon: <FaGitAlt />, name: 'Git'},
+    { icon: <FaReact />, name: 'React.Js'},
+    { icon: <FaPhp />, name: 'PHP'},
+    { icon: <FaVuejs />, name: 'Vue.Js'},
+    { icon: <SiTailwindcss />, name: 'Tailwind CSS'},
+    { icon: <FaPython />, name: 'Python'},
+    { icon: <BiLogoTypescript />, name: 'TypeScript'},
+    { icon: <FaJava />, name: 'Java'},
   ];
   
   const bottomSlider = [
-    { icon: <FaNodeJs />, name: 'Node.Js', position: 1 },
-    { icon: <GrMysql />, name: 'MySQL', position: 2 },
-    { icon: <BiLogoTypescript />, name: 'TypeScript', position: 3 },
-    { icon: <SiVtex />, name: 'VTEX IO', position: 4 },
-    { icon: <SiRubyonrails />, name: 'Ruby on Rails', position: 5 },
-    { icon: <FaSass />, name: 'SASS', position: 6 },
-    { icon: <BiLogoPostgresql />, name: 'PostgreSQL', position: 7 },
-    { icon: <SiSqlite />, name: 'SQLite3', position: 8 },
-    { icon: <SiFlask />, name: 'Flask API', position: 9 },
+    { icon: <FaNodeJs />, name: 'Node.Js'},
+    { icon: <SiSpringboot />, name: 'Spring Boot'},
+    { icon: <FaAws />, name: 'AWS'},
+    { icon: <BiLogoPostgresql />, name: 'PostgreSQL'},
+    { icon: <SiNestjs />, name: 'NestJS'},
+    { icon: <SiRubyonrails />, name: 'Ruby on Rails'},
+    { icon: <FaSass />, name: 'SASS'},
+    { icon: <SiSqlite />, name: 'SQLite3'},
   ];
 
   return (
@@ -54,6 +52,7 @@ const SkillsSlider = () => {
         variants={contentVariants}
         initial="hidden"
         whileInView="show"
+        style={{ "--quantity": topSlider.length }}
         viewport={{
           once: true,
           margin: "-30% 0px -30% 0px"
@@ -64,7 +63,7 @@ const SkillsSlider = () => {
             <SkillBadge key={index} 
               skillIcon={badge.icon} 
               skillName={badge.name} 
-              position={badge.position}
+              position={index + 1}
             />
           ))}
         </div>
@@ -74,6 +73,7 @@ const SkillsSlider = () => {
         variants={contentVariants}
         initial="hidden"
         whileInView="show"
+        style={{ "--quantity": bottomSlider.length }}
         viewport={{
           once: true,
           margin: "-20% 0px -20% 0px"
@@ -84,7 +84,7 @@ const SkillsSlider = () => {
             <SkillBadge key={index} 
               skillIcon={badge.icon} 
               skillName={badge.name} 
-              position={badge.position}
+              position={index + 1}
             />
           ))}
         </div>
